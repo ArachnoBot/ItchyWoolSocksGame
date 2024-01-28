@@ -1,1 +1,1 @@
-To run game: install packages with "npm install" and start game with "npm start"
+Node.js required for running, use commands npm install and npm start to run the game.
