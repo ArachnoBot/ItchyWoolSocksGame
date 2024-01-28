@@ -31,10 +31,7 @@ window.onload = () => {
     pixelArt: true,
     backgroundColor: "#808080",
     physics: {
-      default: "arcade",
-      arcade: {
-        debug: true
-      }
+      default: "arcade"
     },
     scene: [Bootloader, Start, Level1, Level2, Level3, Level4, Level5]
   }
