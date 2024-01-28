@@ -82,7 +82,7 @@ export default class Level2 extends Phaser.Scene {
       setTimeout(()=>{this.ballTrigger.paused = false}, 330)
 
       // Restart if song ends for syncing
-      setTimeout(()=>{this.scene.restart()}, 148000)
+      this.musicTimeout = setTimeout(()=>{this.scene.restart()}, 148000)
     }
 
     update(time, delta) {
@@ -245,6 +245,7 @@ export default class Level2 extends Phaser.Scene {
         this.scene.start("Level3", {config, settings})
         this.music.destroy()
         this.yarnBalls.clear()
+        clearTimeout(this.musicTimeout)
       }, this)
       while(true) {
         await this.delay(100)
