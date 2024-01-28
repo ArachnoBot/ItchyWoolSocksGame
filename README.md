@@ -1,1 +1,1 @@
-To run game install packages: run npm install and npm start
+To run game: install packages with "npm install" and start game with "npm start"
