@@ -66,7 +66,7 @@ export default class Level1 extends Phaser.Scene {
       (basket, woolPiece) => {
         woolCaught += 1
         woolText.text = 'Villaa kerätty: ' + woolCaught.toString()
-        if (!this.finished && woolCaught >= 20) {
+        if (!this.finished && woolCaught >= 10) {
           this.triggerEnding()
         }
         woolPiece.destroy()
