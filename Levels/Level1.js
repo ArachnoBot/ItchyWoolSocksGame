@@ -172,8 +172,8 @@ class WoolPiece extends Phaser.Physics.Arcade.Sprite {
   }
 
   preUpdate(time, delta) {
-    this.setScale(this.scale + 0.005)
-    this.currentRotation += 0.1
+    this.setScale(this.scale + delta/2000)
+    this.currentRotation += delta/60
     this.setRotation(this.currentRotation)
     super.preUpdate(time, delta);
     this.lifespan -= delta;
