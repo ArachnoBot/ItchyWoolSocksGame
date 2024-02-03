@@ -95,11 +95,8 @@ export default class Level2 extends Phaser.Scene {
         console.log("low diff")
       }
       if (this.playTime >= 30) {
-        this.playTime -= 0.2
-        
+        this.playTime -= delta/200
       }
-      
-
       
       if (this.playTime > 800) {
         this.triggerEnding()
